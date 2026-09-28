@@ -1,4 +1,4 @@
-\c :mosipdbname
+\c :dbname
 
 \ir ddl/verify-authorization_request_details.sql
 \ir ddl/verify-vp_submission.sql

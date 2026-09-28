@@ -1,1 +1,1 @@
-DROP DATABASE IF EXISTS :mosipdbname;
+DROP DATABASE IF EXISTS :dbname;

@@ -1,4 +1,4 @@
-CREATE DATABASE :mosipdbname
+CREATE DATABASE :dbname
 	ENCODING = 'UTF8'
 	LC_COLLATE = 'en_US.UTF-8'
 	LC_CTYPE = 'en_US.UTF-8'
@@ -6,11 +6,11 @@ CREATE DATABASE :mosipdbname
 	OWNER = postgres
 	TEMPLATE  = template0;
 
-COMMENT ON DATABASE :mosipdbname IS 'Inji Verify related data is stored in this database';
+COMMENT ON DATABASE :dbname IS 'Inji Verify related data is stored in this database';
 
-\c :mosipdbname postgres
+\c :dbname postgres
 
 DROP SCHEMA IF EXISTS verify CASCADE;
 CREATE SCHEMA verify;
 ALTER SCHEMA verify OWNER TO postgres;
-ALTER DATABASE :mosipdbname SET search_path TO verify,pg_catalog,public;
+ALTER DATABASE :dbname SET search_path TO verify,pg_catalog,public;
